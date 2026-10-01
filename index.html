@@ -48,12 +48,13 @@
         /* --- STYLES CHO FOOTER GRID --- */
         .footer-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.8fr 1fr;
             gap: 40px;
             background-color: #eeeeee;
-            padding: 25px;
+            padding: 30px 40px;
             margin-top: 30px;
             border-radius: 6px;
+            align-items: start;
         }
 
         .footer-box h3,
@@ -81,10 +82,10 @@
         .footer-box ul li {
             margin-left: 0;
             padding-left: 0;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-size: 13.5px;
             line-height: 1.5;
-            color: #555;
+            color: #444;
         }
 
         .footer-box ul li a {
@@ -92,14 +93,44 @@
             color: #555;
             text-transform: uppercase;
         }
+        .box-links {
+            border-left: 1px solid #dcdcdc;
+            padding-left: 30px;
+        }
+        .box-links ul li a {
+            text-decoration: none;
+            color: #444;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
 
+        .box-links ul li a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .box-links {
+            border-left: none;
+            padding-left: 0;
+            border-top: 1px solid #dcdcdc;
+            padding-top: 20px;
+        }
         .footer-box ul li a:hover {
             color: #000;
             text-decoration: underline;
         }
+        .footer-box .footer-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #111;
+            margin: 0 0 16px 0;
+            padding: 0;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
 
         /* Responsive cho điện thoại */
-        @media (max-width: 600px) {
+        @media (max-width: 650px) {
             .footer-container {
                 grid-template-columns: 1fr;
             }
@@ -137,7 +168,7 @@
             </div>
             
             <div class="footer-box box-links">
-                <h3>LIÊN KẾT NHANH</h3>
+                <h3 class="footer-title">LIÊN KẾT NHANH</h3>
                 <ul>
                     <li><a href="https://www.ctu.edu.vn/" target="_blank">ĐẠI HỌC CẦN THƠ</a></li>
                     <li><a href="https://cit.ctu.edu.vn/" target="_blank">TRƯỜNG CNTT-TT</a></li>
