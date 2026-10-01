@@ -5,71 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản Phẩm Thực Hành 05 - Công Nghệ Số</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f9; color: #333; }
-        h1 { color: #0056b3; text-align: center; }
-        h2 { color: #004085; border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-top: 30px; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .description { font-style: italic; color: #555; margin-bottom: 15px; background: #eef5ff; padding: 10px; border-left: 4px solid #0056b3; }
-        img, video { max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px; }
-        footer { margin-top: 30px; font-size: 0.9em; color: #666; border-top: 1px solid #ccc; padding-top: 10px;
-		.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 40px;
-  background-color: #eeeeee;
-  padding: 40px;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-.footer-box h3,
-.footer-box p {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 12px;
-  color: #222;
-  padding-left: 0;
-  margin-left: 0;
-}
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 20px; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        }
+        h1 { 
+            color: #0056b3; 
+            text-align: center; 
+        }
+        h2 { 
+            color: #004085; 
+            border-bottom: 2px solid #0056b3; 
+            padding-bottom: 5px; 
+            margin-top: 30px; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        .description { 
+            font-style: italic; 
+            color: #555; 
+            margin-bottom: 15px; 
+            background: #eef5ff; 
+            padding: 10px; 
+            border-left: 4px solid #0056b3; 
+        }
+        img, video { 
+            max-width: 100%; 
+            height: auto; 
+            margin-top: 10px; 
+            border-radius: 5px; 
+        }
 
-.footer-box h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
+        /* --- STYLES CHO FOOTER GRID --- */
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background-color: #eeeeee;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
 
-.footer-box ul {
-  list-style: none; 
-  padding-left: 0;  
-  margin-left: 0;
-  margin-top: 0;
-}
+        .footer-box h3,
+        .footer-box p {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #222;
+            padding-left: 0;
+            margin-left: 0;
+        }
 
-.footer-box ul li {
-  margin-left: 0;
-  padding-left: 0;
-  margin-bottom: 8px;
-  font-size: 13.5px;
-  line-height: 1.5;
-  color: #555;
-}
+        .footer-box h3 {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-.footer-box ul li a {
-  text-decoration: none;
-  color: #555;
-  text-transform: uppercase;
-}
+        .footer-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+            margin-top: 0;
+        }
 
-.footer-box ul li a:hover {
-  color: #000;
-  text-decoration: underline;
-}
+        .footer-box ul li {
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 8px;
+            font-size: 13.5px;
+            line-height: 1.5;
+            color: #555;
+        }
 
-/* Responsive cho điện thoại */
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
-}	   
-			   }
+        .footer-box ul li a {
+            text-decoration: none;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .footer-box ul li a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,40 +112,40 @@
         <p class="description">
             <strong>Mô tả tổng quan:</strong> Trang web hiển thị tổng hợp các sản phẩm truyền thông đa phương tiện được thiết kế nhằm tuyên truyền và nâng cao nhận thức về lợi ích của công nghệ số trong giáo dục.
         </p>
-        
+
         <h2>1. Infographic Lợi Ích Công Nghệ Số</h2>
-	<p><strong>Mô tả sản phẩm:</strong>Infographic tóm tắt 5 lợi ích cốt lõi của công nghệ số trong học tập bao gồm: (1) Tiếp cận kiến thức mọi lúc, mọi nơi; (2) Học tập tương tác, sinh động; (3) Kết nối bạn bè và giáo viên dễ dàng; (4) Tiết kiệm thời gian và nâng cao hiệu quả; (5) Phát triển kỹ năng công nghệ và tự học.</p>
+        <p><strong>Mô tả sản phẩm:</strong> Infographic tóm tắt 5 lợi ích cốt lõi của công nghệ số trong học tập bao gồm: (1) Tiếp cận kiến thức mọi lúc, mọi nơi; (2) Học tập tương tác, sinh động; (3) Kết nối bạn bè và giáo viên dễ dàng; (4) Tiết kiệm thời gian và nâng cao hiệu quả; (5) Phát triển kỹ năng công nghệ và tự học.</p>
         <img src="Infographic_CongNgheSo.png" alt="Infographic Lợi ích công nghệ số">
-        
+
         <h2>2. Video Giới Thiệu Ngắn</h2>
-	<p><strong>Mô tả sản phẩm:</strong>Video ngắn (30 giây) giới thiệu vai trò của công nghệ số trong việc thay đổi cách sống, học tập và làm việc; giúp kết nối thế giới, tìm kiếm tri thức dễ dàng, tối ưu hiệu suất làm việc và mở ra cơ hội phát triển tương lai.</p>
+        <p><strong>Mô tả sản phẩm:</strong> Video ngắn (30 giây) giới thiệu vai trò của công nghệ số trong việc thay đổi cách sống, học tập và làm việc; giúp kết nối thế giới, tìm kiếm tri thức dễ dàng, tối ưu hiệu suất làm việc và mở ra cơ hội phát triển tương lai.</p>
         <video controls width="100%">
             <source src="Video_CongNgheSo.mp4" type="video/mp4">
             Trình duyệt của bạn không hỗ trợ thẻ video.
         </video>
 
         <footer class="footer-container">
-  
-  <div class="footer-box box-links">
-    <h3>LIÊN KẾT & HỌC THUẬT</h3>
-    <ul>
-      <li><a href="https://www.ctu.edu.vn/">ĐẠI HỌ CẦN THƠ</a></li>
-      <li><a href="https://cit.ctu.edu.vn/">TRƯỜNG CNTT-TT</a></li>
-      <li><a href="https://dsa.ctu.edu.vn/">PHÒNG CT SINH VIÊN</a></li>
-    </ul>
-  </div>
+            <!-- Box 1: Link -->
+            <div class="footer-box box-links">
+                <h3>LIÊN KẾT & HỌC THUẬT</h3>
+                <ul>
+                    <li><a href="https://www.ctu.edu.vn/" target="_blank">ĐẠI HỌC CẦN THƠ</a></li>
+                    <li><a href="https://cit.ctu.edu.vn/" target="_blank">TRƯỜNG CNTT-TT</a></li>
+                    <li><a href="https://dsa.ctu.edu.vn/" target="_blank">PHÒNG CT SINH VIÊN</a></li>
+                </ul>
+            </div>
 
-
-  <div class="footer-box box-copyright">
-    <p><strong>Ghi chú bản quyền & Nguồn AI:</strong></p>
-    <ul>
-      <li>Văn bản tổng hợp hỗ trợ bởi Google Bard/Gemini.</li>
-      <li>Infographic hỗ trợ bởi Canva AI, hình ảnh từ Unsplash (CC0).</li>
-      <li>Video dựng bằng CapCut, tư liệu Pexels & FreeSound (CC0).</li>
-      <li>Code HTML biên soạn thủ công/hỗ trợ AI. Giấy phép nội dung: CC BY 4.0.</li>
-    </ul>
-  </div>
-</footer>
+            <!-- Box 2: Bản quyền -->
+            <div class="footer-box box-copyright">
+                <p><strong>Ghi chú bản quyền & Nguồn AI:</strong></p>
+                <ul>
+                    <li>Văn bản tổng hợp hỗ trợ bởi Google Bard/Gemini.</li>
+                    <li>Infographic hỗ trợ bởi Canva AI, hình ảnh từ Unsplash (CC0).</li>
+                    <li>Video dựng bằng CapCut, tư liệu Pexels & FreeSound (CC0).</li>
+                    <li>Code HTML biên soạn thủ công/hỗ trợ AI. Giấy phép nội dung: CC BY 4.0.</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
