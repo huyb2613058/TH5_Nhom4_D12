@@ -45,58 +45,49 @@
             border-radius: 5px; 
         }
 
-        /* --- STYLES CHO FOOTER GRID --- */
+       
         .footer-container {
             display: grid;
-            grid-template-columns: 1.8fr 1fr;
+            grid-template-columns: 1.8fr 1fr; 
             gap: 40px;
             background-color: #eeeeee;
             padding: 30px 40px;
             margin-top: 30px;
             border-radius: 6px;
-            align-items: start;
+            align-items: start; 
         }
 
-        .footer-box h3,
-        .footer-box p {
+        
+        .footer-box .footer-title {
             font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 12px;
-            color: #222;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .footer-box h3 {
             font-weight: bold;
+            color: #111;
+            margin: 0 0 16px 0; 
+            padding: 0;
+            line-height: 1.2;
             text-transform: uppercase;
         }
 
+        
         .footer-box ul {
             list-style: none;
             padding-left: 0;
-            margin-left: 0;
-            margin-top: 0;
+            margin: 0;
         }
 
         .footer-box ul li {
-            margin-left: 0;
-            padding-left: 0;
             margin-bottom: 10px;
             font-size: 13.5px;
             line-height: 1.5;
             color: #444;
         }
 
-        .footer-box ul li a {
-            text-decoration: none;
-            color: #555;
-            text-transform: uppercase;
-        }
+        
         .box-links {
             border-left: 1px solid #dcdcdc;
             padding-left: 30px;
         }
+
         .box-links ul li a {
             text-decoration: none;
             color: #444;
@@ -109,37 +100,25 @@
             color: #0056b3;
             text-decoration: underline;
         }
-        .box-links {
-            border-left: none;
-            padding-left: 0;
-            border-top: 1px solid #dcdcdc;
-            padding-top: 20px;
-        }
-        .footer-box ul li a:hover {
-            color: #000;
-            text-decoration: underline;
-        }
-        .footer-box .footer-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: #111;
-            margin: 0 0 16px 0;
-            padding: 0;
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
 
         /* Responsive cho điện thoại */
         @media (max-width: 650px) {
             .footer-container {
                 grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .box-links {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid #dcdcdc;
+                padding-top: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>BÁO CÁO NỘI DUNG SỐ: ỨNG DỤNG CÔNG NGHỆ SỐ TRONG HỌC TẬP</h1>
+        <h1>ỨNG DỤNG CÔNG NGHỆ SỐ TRONG HỌC TẬP</h1>
         <p class="description">
             <strong>Mô tả tổng quan:</strong> Trang web hiển thị tổng hợp các sản phẩm truyền thông đa phương tiện được thiết kế nhằm tuyên truyền và nâng cao nhận thức về lợi ích của công nghệ số trong giáo dục.
         </p>
@@ -156,9 +135,9 @@
         </video>
 
         <footer class="footer-container">
-
+            <!-- Box 1: Bản quyền & Nguồn AI -->
             <div class="footer-box box-copyright">
-                <p><strong>Ghi chú bản quyền & Nguồn AI:</strong></p>
+                <h3 class="footer-title">GHI CHÚ BẢN QUYỀN & NGUỒN AI</h3>
                 <ul>
                     <li>Văn bản tổng hợp hỗ trợ bởi Google Bard/Gemini.</li>
                     <li>Infographic hỗ trợ bởi Canva AI, hình ảnh từ Unsplash (CC0).</li>
@@ -166,7 +145,8 @@
                     <li>Code HTML biên soạn thủ công/hỗ trợ AI. Giấy phép nội dung: CC BY 4.0.</li>
                 </ul>
             </div>
-            
+
+            <!-- Box 2: Liên kết nhanh -->
             <div class="footer-box box-links">
                 <h3 class="footer-title">LIÊN KẾT NHANH</h3>
                 <ul>
